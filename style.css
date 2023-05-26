@@ -1,0 +1,43 @@
+header {
+    background-color: #9c9c9c21;
+    color: rgb(255, 255, 255);
+}
+header>
+       
+.cabecalho {
+    background-color: #424E61;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 240px 0;
+}.cabecalho {
+    background-color: #424E61;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 240spx 0;
+}
+.angry-grid {
+    display: grid;
+    grid-template-rows: 4rem auto 45px;
+    grid-template-columns: 16rem auto;
+  
+    grid-template-areas:
+     'logo header'
+     'sidebar main-content'
+     'sidebar footer';
+   }
+  
+  @media (max-width: 767px){
+   .angry-grid {
+    grid-template-rows: 4rem auto auto 45px;
+    grid-template-columns: 16rem auto;
+  
+    grid-template-areas:
+     'logo header'
+     'sidebar sidebar'
+     'main-content main-content';
+   }
+  }
